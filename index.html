@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="cityname" placeholder="Enter city name" />
+            <button id="curr-btn">Get Weather</button>
+        </div>
+
+        <div class="row">
+            <!-- First row: Current weather and two charts -->
+            <div class="card" id="currentWeather"></div>
+            <div class="card chart-card">
+                <canvas id="temperatureChart"></canvas>
+            </div>
+            <div class="card chart-card">
+                <canvas id="pressureChart"></canvas>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Second row: The rest of the charts -->
+            <div class="card chart-card">
+                <canvas id="windSpeedChart"></canvas>
+            </div>
+            <div class="card chart-card">
+                <canvas id="feelsLikeChart"></canvas>
+            </div>
+            <div class="card chart-card">
+                <canvas id="humidityChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
