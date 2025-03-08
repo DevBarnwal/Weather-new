@@ -6,6 +6,26 @@
     <title>Weather and Forecast</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Styling for "Made by Dev" */
+        .made-by {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1c1818;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -37,6 +57,16 @@
                 <canvas id="humidityChart"></canvas>
             </div>
         </div>
+
+        <!-- "Made by Dev" text -->
+        <div class="made-by">
+            Made by Dev ☕️
+        </div>
+    </div>
+
+    <!-- Copyright footer -->
+    <div class="footer">
+        &copy; 2024 Weather App. All rights reserved.
     </div>
 
     <script src="script.js"></script>

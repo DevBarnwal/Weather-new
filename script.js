@@ -150,7 +150,7 @@ function fetchWeatherByLocation(position) {
         });
 }
 
-// Get user's current location
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(fetchWeatherByLocation, (error) => {
         console.error("Error getting location:", error);
